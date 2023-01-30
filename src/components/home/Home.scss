@@ -1,0 +1,98 @@
+.Home{
+   h1,h2,p{
+      margin: 0;
+      padding: 0;
+   }
+   .container{
+      background-color: white;
+      width: 320px;
+      height: 410px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 10px;
+
+      
+
+      .search{
+       padding: 10px;
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+
+         input{
+            padding-block: 11px;
+            border: 1px solid rgb(192, 189, 189);
+            border-radius: 8px;
+            padding-inline: 5px;
+         }
+         button{
+            background-color: rgb(12, 101, 243);
+            color: white;
+            padding-block: 11px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+
+            &:hover{
+               background-color: rgb(8, 74, 180);
+            }
+            &:active{
+               background-color: rgb(12, 101, 243);
+            }
+         }
+      }
+      .search-result{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+
+
+         .city-name{
+            display: flex;
+               flex-direction: column;
+               justify-content: center;
+                  align-items: center;
+                  gap: 15px;
+
+
+            .image{
+               width: 80px;
+               img{
+                  width: 100%;
+               }
+            }
+            .city-data{
+               display: flex;
+               flex-direction: column;
+               gap: 5px;
+               align-items: center;
+
+               .city-heading{
+                  font-size: 2rem;
+               }
+
+            }
+         }
+        
+
+         .min-max{
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            align-items: center;
+
+
+            .line{
+               width: 1px;
+               background-color: black;
+               height: 50px;
+            }
+         }
+      }
+   }
+}
