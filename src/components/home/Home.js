@@ -35,8 +35,7 @@ function Home() {
      const apiUrl =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
      try {
       const res = await fetch(apiUrl);
-      const data = await res.json()
-      console.log(data);    
+      const data = await res.json()    
       setCity(data.name )
       const kelvinValue =data.main.temp
       setTemp(Math.floor( kelvinValue - 273.15))
