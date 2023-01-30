@@ -75,7 +75,7 @@ function Home() {
                
             </div>
             <h2 className='temp-heading'>{temp}<sup>o</sup>C </h2>
-            <p>{humidity}%</p>
+            <p>Humidity {humidity}%</p>
             <div className='min-max'>
                <div>
                   <p>Min</p>
